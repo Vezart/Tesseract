@@ -98,16 +98,15 @@ body {
 
 .tess-logo-img
 {
-	margin-left:-50px;
-// margin-top: 10px;
- // margin-bottom: 10px;
-  //min-width: 350px;
- // min-height:100px;
-   //background: transparent url(../images/tesslogo-white.png) no-repeat left;
-   //background-size:150px auto;
-   width:250px;
-   float:left;
-   height:auto;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 10000;
+  width:250px;
+  height:auto;
+  background: transparent;
+  background-width: 280px;
+  
 }
 .masthead-nav > li {
   display: inline-block;

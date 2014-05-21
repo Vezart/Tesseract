@@ -1,0 +1,251 @@
+@font-face {
+  font-family: 'Verlag';
+  src:url('http://www.haileykray.com/Verlag.otf');
+}
+/*@font-face {
+  font-family: 'Verlag';
+  src:url('http://www.haileykray.com/Verlag.otf');
+  font-weight: bold;
+  font-style: normal;
+} */
+@font-face {
+  font-family: 'Chronicle'
+  src:url('http://wwww.haileykray.com/Chronicle.otf');
+}
+
+
+body 
+{
+  
+  // font-size:0.9em;
+  font-family: Helvetica, Arial, FreeSans, sans-serif;
+ // font-size:100%;
+  background: #fff;
+  color:#555;
+  background:url(../images/bgtile.jpg);
+  //   background:url(../images/logohome.png) no-repeat ;
+
+  background-repeat:repeat;
+  
+   // box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  color: #fff;
+  background-color: #34e533   ;
+}
+
+
+.navbar-default .navbar-nav  > a,
+.navbar-default .navbar-nav  > a:hover,
+.navbar-default .navbar-nav  > a:focus {
+  //color: #fff;
+  background-color: #ccc   ;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  //color: #fff;
+  background-color: #ccc   ;
+}
+
+
+.navbar-default 
+{
+  margin-top: -20px;
+  width:auto;
+  background-color: #aaaaaa;
+  height:60px;
+  font-weight: 575;
+margin-left: 50px;
+ background: transparent ;//url(../images/tesslogo.png) no-repeat left;
+ border-color: transparent;
+}
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+
+.navbar-inverse {
+  //padding-top: 10px;
+	height:10px;
+ // background-color: #222;
+ // border-color: #080808;
+
+background-color: #191919;
+background-image: linear-gradient(bottom, rgb(25,25,25) 0%, rgb(104,104,104) 100%);
+background-image: -o-linear-gradient(bottom, rgb(25,25,25) 0%, rgb(104,104,104) 100%);
+background-image: -moz-linear-gradient(bottom, rgb(25,25,25) 0%, rgb(104,104,104) 100%);
+background-image: -webkit-linear-gradient(bottom, rgb(25,25,25) 0%, rgb(104,104,104) 100%);
+background-image: -ms-linear-gradient(bottom, rgb(25,25,25) 0%, rgb(104,104,104) 100%);
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0, rgb(25,25,25)),
+	color-stop(1, rgb(104,104,104))
+);
+filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#686868', EndColorStr='#191919');
+-moz-box-shadow: 0px 2px 2px 1px rgba(37,37,37,0.25);
+-webkit-box-shadow: 0px 2px 2px 1px rgba(37,37,37,0.25);
+box-shadow: 0px 2px 2px 1px rgba(37,37,37,0.25);
+/* For IE 8 */
+-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=90, Color='#555555')";
+/* For IE 5.5 - 7 */
+filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=90, Color='#555555');
+
+ background: #4D000A url(http://www.uark.edu/rd_vcad/inc/globalCSS/ribbon/ribbon.png) no-repeat left;
+
+}
+.tess-logo
+{
+  z-index:1;
+  //background: transparent url(../images/logohome.png) no-repeat right;
+  margin-top:10px;
+left: 40px;
+   // float: right;
+   position:absolute;
+ 
+  
+}
+
+.container-img
+{
+    //z-index:1;
+  //background: transparent url(../images/logohome.png) no-repeat right;
+   // float: right;
+  // position:absolute;
+  width: 330px;
+ height:auto;
+//padding-bottom: 15px;
+border-color: #000;
+ -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -khtml-border-radius: 8px;  
+    border-radius: 8px;
+    box-shadow: 1px 1px 5px #888888;
+
+  
+}
+.starter-template 
+{
+  padding: 40px 15px;
+  text-align: center;
+
+}
+
+.homeLogo {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: auto;
+    z-index:-1;
+    opacity:0.2;
+    filter:alpha(opacity=20); /* For IE8 and earlier */
+
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+top:100;
+  height: 500px;
+  margin-bottom: 60px;
+  margin-top: 130px;
+  border-color: transparent;
+  
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+  color: #ccc;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+  background: transparent  url(../images/logohome.png) no-repeat;
+  
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+
+/* JUMBOTRON
+-----------------------*/
+.jumbotron {
+
+  padding: 30px;
+  //top:180px;
+  margin-top:160px;
+  margin-bottom: 30px;
+  color: inherit;
+  height:100%;
+  background-color:rgba(255,255,255,0.55);
+  //background-color: transparent;// #eee;
+ // background:url(../images/logohome.png) no-repeat right;
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Pad the edges of the mobile views a bit */
+.marketing {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+

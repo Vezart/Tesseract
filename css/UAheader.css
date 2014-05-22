@@ -62,7 +62,7 @@ position: relative;
 margin: 0px auto;
 padding: 0px;
 width: 100%;
-background: url(../images/UA_logo.png) top left no-repeat;
+background: url("http://globalcampus.uark.edu/images/UA_logo.png") top left no-repeat;
 min-height: 40px;
 line-height: normal;
 clear: both;

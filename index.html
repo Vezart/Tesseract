@@ -2,6 +2,7 @@
 <!-- saved from url=(0040)http://getbootstrap.com/examples/cover/# -->
 <html lang="en">
 <head>
+  <title>Tesseract - Interactive Humanities and Game Design</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,16 +11,18 @@
   <meta name="author" content="">
   <link rel="shortcut icon" href="http://getbootstrap.com/assets/ico/favicon.ico">
 
-  <title>Cover Template for Bootstrap</title>
-
-
+  <link href="css/1140.css" rel="stylesheet" tpe="text/css">
+  <link href="css/UAheader.css" rel="stylesheet" type="text/css">
+  <link href="css/UAstyle.css" rel="stylesheet" type="text/css">
+  <link href="css/top_nav.css" rel="stylesheet" type="text/css">
+  
 
   <!-- Bootstrap core CSS -->
-  <link href="css/bootstrap.css" rel="stylesheet">
+  <!--<link href="css/bootstrap.css" rel="stylesheet">-->
   <!-- Custom styles for this template -->
-  <link href="css/cover.css" rel="stylesheet">
+<link href="css/cover.css" rel="stylesheet">
 
-<link href="http://www.uark.edu/rd_vcad/inc/globalCSS/UAHeader.css" rel="stylesheet" type="text/css" media="screen" />
+
 
 
   <!-- Just for debugging purposes. Don't actually copy this line! -->
@@ -32,47 +35,81 @@
   <![endif]-->
   <style id="holderjs-style" type="text/css"></style>
   <style>[touch-action="none"]{ -ms-touch-action: none; touch-action: none; }[touch-action="pan-x"]{ -ms-touch-action: pan-x; touch-action: pan-x; }[touch-action="pan-y"]{ -ms-touch-action: pan-y; touch-action: pan-y; }[touch-action="scroll"],[touch-action="pan-x pan-y"],[touch-action="pan-y pan-x"]{ -ms-touch-action: pan-x pan-y; touch-action: pan-x pan-y; }</style><style id="clearly_highlighting_css" type="text/css">/* selection */ html.clearly_highlighting_enabled ::-moz-selection { background: rgba(246, 238, 150, 0.99); } html.clearly_highlighting_enabled ::selection { background: rgba(246, 238, 150, 0.99); } /* cursor */ html.clearly_highlighting_enabled {    /* cursor and hot-spot position -- requires a default cursor, after the URL one */    cursor: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--cursor.png") 14 16, text; } /* highlight tag */ em.clearly_highlight_element {    font-style: inherit !important; font-weight: inherit !important;    background-image: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--yellow.png");    background-repeat: repeat-x; background-position: top left; background-size: 100% 100%; } /* the delete-buttons are positioned relative to this */ em.clearly_highlight_element.clearly_highlight_first { position: relative; } /* delete buttons */ em.clearly_highlight_element a.clearly_highlight_delete_element {    display: none; cursor: pointer;    padding: 0; margin: 0; line-height: 0;    position: absolute; width: 34px; height: 34px; left: -17px; top: -17px;    background-image: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--delete-sprite.png"); background-repeat: no-repeat; background-position: 0px 0px; } em.clearly_highlight_element a.clearly_highlight_delete_element:hover { background-position: -34px 0px; } /* retina */ @media (min--moz-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {    em.clearly_highlight_element { background-image: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--yellow@2x.png"); }    em.clearly_highlight_element a.clearly_highlight_delete_element { background-image: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--delete-sprite@2x.png"); background-size: 68px 34px; } } </style>
-
-
 </head>
 
 <body>
+  <div id="outerwrapper">
+    <header>
+      <div class="container header-ribbon">
+        <div class="row">
+          <div class="twelvecol" id="UAribbon">
 
-  <div id="UAribbon">
-    <div class="row">
-      <div class="twelvecol" id="UAribbon">
-        <a id="UALogo" href="http://www.uark.edu/" title="University of Arkansas - The YOU of A -">
-          <span class="hidden">University of Arkansas - The YOU of A -</span>
-        </a>
-        <ul id="GlobalLinks">
-          <li><a href="http://razalert.uark.edu/" title="RazALERT">RazALERT</a></li>
-          <li><a href="http://learn.uark.edu/" title="Blackboard">Blackboard</a></li>
-          <li><a href="http://isis.uark.edu/" title="ISIS">ISIS</a></li>
-          <li><a href="http://email.uark.edu/" title="UARK Gmail">UARK Gmail</a></li>
-          <li><a href="http://campusmaps.uark.edu/" title="CAMPUS MAP">CAMPUS MAP</a></li>
-          <li><a href="http://directory.uark.edu/" title="DIRECTORY">DIRECTORY</a></li>
-          <li><a class="GlobalLinksLast" href="http://www.uark.edu/a-to-z.php" title="A - Z INDEX">A - Z INDEX</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
+              <a id="UALogo" href="http://www.uark.edu/" title="University of Arkansas - The YOU of A -">
+                <span class="hidden">University of Arkansas - The YOU of A -</span>
+              </a>
+              <ul id="GlobalLinks">
+                <li><a href="http://razalert.uark.edu/" title="RazALERT">RazALERT</a></li>
+                <li><a href="http://learn.uark.edu/" title="Blackboard">Blackboard</a></li>
+                <li><a href="http://isis.uark.edu/" title="ISIS">ISIS</a></li>
+                <li><a href="http://email.uark.edu/" title="UARK Gmail">UARK Gmail</a></li>
+                <li><a href="http://campusmaps.uark.edu/" title="CAMPUS MAP">CAMPUS MAP</a></li>
+                <li><a href="http://directory.uark.edu/" title="DIRECTORY">DIRECTORY</a></li>
+                <li><a class="GlobalLinksLast" href="http://www.uark.edu/a-to-z.php" title="A - Z INDEX">A - Z INDEX</a></li>
+              </ul>
 
-  <div class="site-wrapper">
-    <div class="site-wrapper-inner">
-      <a class="brand" href="index.html"><img src="images/tesslogo-white.png" class="tess-logo-img" /></a>
-      <nav class="navbar navbar-inverse " role="navigation"> <!--add back in navbar-fixed-top-->
-        <div class="container-fluid">
-          <div class="row">
-            
-            <ul class="nav navbar-nav">
-              <li><a href="#">Home <span class="glyphicon glyphicon-home"></span></a></li>
-              <li><a href="#">Games <span class="glyphicon glyphicon-screenshot"></span></a></li>
-              <li><a href="#">The Team <span class="glyphicon glyphicon-eye-open"></span></a></li>
-              <li><a href="#">Blog <span class="glyphicon glyphicon-tasks"></span></a></li>
-            </ul>
           </div>
         </div>
-      </nav> 
+      </div>
+
+      <div class="container header-GCtitle">
+        <div class="row GCheader">
+          <!-- Needed for space between ribbon and navbar, may add something later-->
+        </div>
+      </div>
+    </header>
+
+    <nav>
+      <div class="container" style="width:100%; max-width:1014px; margin: 0 auto;">
+        <div class="top_nav">
+          
+          <ul id="menu">
+            <li class="logo"><img src="images/tesslogo-white.png" class="tess-logo-img"></li>
+            <li class="first"><a href="#">Home</a></li>
+            <li class="reg"><a href="#">Games</a></li>
+            <li class="reg"><a href="#">The Team</a></li>
+            <li class="reg"><a href="#">Blog</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    
+
+
+  </div>
+
+  <!--<div class="site-wrapper">
+    <div class="site-wrapper-inner">
+      
+      <div class="row">
+        <span class="col-md-10 col-md-offset-1">
+          <a class="brand" href="index.html"><img src="images/tesslogo-white.png" class="tess-logo-img" /></a>
+          <nav class="navbar navbar-inverse ">
+            <div class="container-fluid">
+              <div class="row">
+
+                
+                <ul class="nav navbar-nav">
+                  <li><a href="#">Home <span class="glyphicon glyphicon-home"></span></a></li>
+                  <li><a href="#">Games <span class="glyphicon glyphicon-screenshot"></span></a></li>
+                  <li><a href="#">The Team <span class="glyphicon glyphicon-eye-open"></span></a></li>
+                  <li><a href="#">Blog <span class="glyphicon glyphicon-tasks"></span></a></li>
+                </ul>
+              </div>
+            </div>
+          </nav> 
+        </span>
+      </div>
       <div class="row">
         <span class="col-md-10 col-md-offset-1">
           <h1 class="cover-heading">Tesseract</h1>
@@ -81,61 +118,7 @@
             <a href="./CoverWeb_files/CoverWeb.html" class="btn btn-lg btn-default">Learn more</a>
           </p>
         </span>
-      </div>
-
-
-
-      <!-- Carousel
-    ================================================== -->
-    <div id="myCarousel" class="carousel slide col-md-10 col-md-offset-1" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="item active">
-          <img data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide" alt="First slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>House of the Prince</h1>
-                       <img src="images/hopn.png" class="container-img" />
-
-              <p>Learn about the details of a Roman dwelling by freely exploring a speculative 3D recreation of a Pompeian house with furniture and evening lighting.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Explore the House</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img data-src="holder.js/900x500/auto/#666:#6a6a6a/text:Second slide" alt="Second slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Another example headline.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Third slide" alt="Third slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>One more for good measure.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-    </div><!-- /.carousel -->
-
-
-
-
-
+      </div>-->
 
         <div class="mastfoot">
           <div class="inner">

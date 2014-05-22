@@ -1,0 +1,167 @@
+/* CSS Document */
+header {
+zoom: 1;
+display: block;
+}
+
+.header-ribbon {
+background-color: #9f1b32;
+background-image: linear-gradient(bottom, rgb(127,18,34) 0%, rgb(159,27,50) 50%);
+background-image: -o-linear-gradient(bottom, rgb(127,18,34) 0%, rgb(159,27,50) 50%);
+background-image: -moz-linear-gradient(bottom, rgb(127,18,34) 0%, rgb(159,27,50) 50%);
+background-image: -webkit-linear-gradient(bottom, rgb(127,18,34) 0%, rgb(159,27,50) 50%);
+background-image: -ms-linear-gradient(bottom, rgb(127,18,34) 0%, rgb(159,27,50) 50%);
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0, rgb(127,18,34)),
+	color-stop(0.50, rgb(159,27,50))
+	);
+filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#9f1b32', EndColorStr='#7f1222')
+-moz-box-shadow: 0px 0px 6px 1px rgba(37,37,37,0.5);
+-webkit-box-shadow: 0px 0px 6px 1px rgba(37,37,37,0.5);
+box-shadow: 0px 0px 6px 1px rgba(37,37,37,0.5);
+/* For IE 8 */
+-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=90, Color='#555555')";
+/* For IE 5.5 - 7 */
+filter: progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=90, Color='#555555');
+}
+
+.header-GCtitle {
+}
+
+.header-search {
+float:right;
+text-align:center;
+margin-top: 28px;
+}
+
+.header-search-online {
+float:right;
+text-align:right;
+margin-top: 8px;
+}
+
+.GCheader {
+zoom: 1;
+display: block;
+padding: 14px 0 3px 0;
+min-height: 95px;
+}
+
+.GCheader-Online {
+zoom: 1;
+display: block;
+padding: 10px 0 5px 0;
+min-height: 95px;
+}
+
+#UAribbon {
+position: relative;
+margin: 0px auto;
+padding: 0px;
+width: 100%;
+background: url(../images/UA_logo.png) top left no-repeat;
+min-height: 40px;
+line-height: normal;
+clear: both;
+}
+
+#UAribbon-Online {
+min-height: 37px;
+}
+
+#UAribbon a {
+border-bottom: none;
+}
+
+#UAribbon #UALogo  {
+display: block;
+height: 38px;
+width: 460px;
+position: absolute;
+top: 0;
+left: 0;
+}
+
+#UAribbon ul#GlobalLinks,
+#UAribbon-Online ul#GlobalLinks {
+list-style: none;
+margin: 0 auto;
+padding: 0;
+display: block;
+float:right;
+font: 0.8em "century gothic","helvetica neue",helvetica,sans-serif !important;
+text-shadow: 1px 1px 1px #64000f;
+}
+
+#UAribbon #GlobalLinks li a,
+#UAribbon-Online ul#GlobalLinks li a {
+display: inline-block;
+color: #FFF;
+text-decoration: none;
+padding: 0px 10px;
+margin: 0 0 3px 0;
+border-right: 1px solid #e0b9c0;
+margin-top:12px;
+}
+
+#UAribbon #GlobalLinks a.GlobalLinksLast,
+#UAribbon-Online ul#GlobalLinks a.GlobalLinksLast {
+border-right-style: none;
+padding: 0px 0px 0px 10px;
+}
+
+#UAribbon #GlobalLinks li a:hover,
+#UAribbon-Online ul#GlobalLinks li a:hover {
+text-decoration: underline;
+}
+
+#UAribbon #GlobalLinks li,
+#UAribbon-Online ul#GlobalLinks li {
+float: left;
+}
+
+#sectionHeader #gs {
+margin-top: 20px;
+padding: 0px;
+width: 265px;
+float: right;
+}
+
+#sectionHeader #gs #search {
+margin: 0px;
+color: #666;
+width: 220px;
+height: 16px;
+}
+
+#sectionHeader #gs #GO {
+background: url(../images/UAsprites.png) -10px -10px;
+display: inline-block;
+height: 27px;
+width: 27px;
+border-style: none;
+cursor: pointer;
+position: relative;
+top:3px;
+right:5px;
+}
+
+#sectionHeader h2 {
+font-family: 'Source Sans Pro', sans-serif;
+font-weight: 600;
+font-size: 3.1em;
+text-transform: uppercase;
+}
+
+.hidden {
+position:absolute;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;
+display:none;
+}

@@ -1,0 +1,494 @@
+/* ================================= */
+/* Main University of Arkansas CSS   */
+/* ================================= */
+
+
+
+/* ================================= */
+/* Resets                            */
+/* ================================= */
+
+* {
+margin: 0;
+}
+
+html, body {
+height: 100%;
+}
+
+#outerwrapper {
+min-height: 100%;
+height: auto !important;
+height: 100%;
+margin: 0 auto -385px;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-size: 0.8em;
+	line-height: 1.3em;
+	color: #000;
+	height: 100%;
+	background: #fff url(/images/OldMain_bkgr.jpg) center top no-repeat;
+	/*background-attachment:fixed;*/
+}
+
+
+
+
+
+/* Form elements don't inherit font styles by default */
+input, select, textarea {
+	font-family: inherit;
+	font-size: 1em;	/*font-size: 1em; Works for IE6*/
+	font-weight: inherit;
+}
+
+.header-search input,
+.header-search-online input {
+	font-size: 0.8em;
+}
+
+input, textarea {
+	padding: 4px 15px 2px 10px;
+	margin: 0; 
+	background: #fff;
+	background: -moz-linear-gradient(top, #efefef 0%, #fff 30%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#efefef), color-stop(30%,#fff)); /* webkit */
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-box-shadow: 0px 1px 0px #f2f2f2;
+	-webkit-box-shadow: 0px 1px 0px #f2f2f2;
+	color: #252525;
+	border: 1px solid #ccc;
+}
+	input::-webkit-input-placeholder  {
+    	color: #252525;
+		text-shadow: 0px -1px 0px #38506b;  
+	}
+	input:-moz-placeholder {
+	    color: #252525;
+		text-shadow: 0px -1px 0px #38506b; 
+	}
+
+input:focus, textarea:focus {
+	background: #fff;
+	outline: none;
+	/*background: -moz-linear-gradient(top, #F2F0E6 0%, #fff 20%);  firefox */
+	/*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F2F0E6), color-stop(20%,#fff));  webkit */
+}
+
+input[type=submit] {
+	margin: 0;
+	-moz-box-shadow: 0px 1px 3px #999;
+	-webkit-box-shadow: 0px 1px 3px #999;
+	border: 1px solid #191919;
+	background-color: #191919;
+	background-image: linear-gradient(bottom, rgb(25,25,25) 0%, rgb(104,104,104) 100%);
+	background-image: -o-linear-gradient(bottom, rgb(25,25,25) 0%, rgb(104,104,104) 100%);
+	background-image: -moz-linear-gradient(bottom, rgb(25,25,25) 0%, rgb(104,104,104) 100%);
+	background-image: -webkit-linear-gradient(bottom, rgb(25,25,25) 0%, rgb(104,104,104) 100%);
+	background-image: -ms-linear-gradient(bottom, rgb(25,25,25) 0%, rgb(104,104,104) 100%);
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0, rgb(25,25,25)),
+		color-stop(1, rgb(104,104,104))
+	);
+	cursor: pointer;
+	color: #fff;
+}
+
+input[type=submit]:hover {
+background-color: #191919;
+background-image: linear-gradient(bottom, rgb(104,104,104) 0%, rgb(25,25,25) 100%);
+background-image: -o-linear-gradient(bottom, rgb(104,104,104) 0%, rgb(25,25,25) 100%);
+background-image: -moz-linear-gradient(bottom, rgb(104,104,104) 0%, rgb(25,25,25) 100%);
+background-image: -webkit-linear-gradient(bottom, rgb(104,104,104) 0%, rgb(25,25,25) 100%);
+background-image: -ms-linear-gradient(bottom, rgb(104,104,104) 0%, rgb(25,25,25) 100%);
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0, rgb(104,104,104)),
+	color-stop(1, rgb(25,25,25))
+);
+}
+
+
+
+/* Accessible focus treatment: people.opera.com/patrickl/experiments/keyboard/test */
+a:hover, a:active { outline: none; }
+
+
+blockquote {
+	margin-left: 1em;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+img {
+	vertical-align: bottom;
+	border: 0;
+}
+
+/* Remove outline on flash objects */
+object { outline: none; }
+
+/* http://en.wikipedia.org/wiki/User:Mzajac/monobook.css/Superscript_fix */
+sup, sub {
+	vertical-align: baseline;
+	position: relative;
+}
+sup { bottom: 0.33em; }
+sub { bottom: -0.25em; }
+
+label { cursor: pointer; }
+
+
+
+
+
+/* this is to fix IE 6 and 7 which create extra right/left padding on buttons
+ * IMPORTANT: because IE 6 does not understand the first selector below, you need to apply the class "inputButton" to all input of type="button" in your documents
+ * the first declaration is for IE 6 and 7, the second one for IE 6 only, the third one is for all browsers.
+ */
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+.inputButton {
+  *overflow: visible;
+  _width: 0;
+  padding: .2em .4em;
+}
+
+/* CLEAR FIX*/
+.clearfix:after {content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;}
+.clearfix {display: inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+
+a {
+color: #8F0018;
+text-decoration: underline;
+outline: 0;
+}
+a:link {
+color:#8F0018;
+}
+a:hover {
+color: #be0f34;
+text-decoration: none;
+}
+#OnlinePromo a, #OnlineTrends a {
+color: #8f0018;
+}
+#OnlinePromo a:hover {
+color: #be0f34;
+}
+h2.UAOnline a {
+color: #be0f34;
+}
+h2.UAOnline a:hover {
+color: #9f1b32;
+}
+h2.GCtitle a,
+h2.UAOnline a,
+.GCheader-Online a,
+#breadcrumbs a,
+#OnlinePromo a,
+#OnlineTrends a,
+.OnlinePrograms a,
+#navheader a,
+footer h4 a,
+a.button,
+.highligt-link a,
+.highligt-link-MP a {
+text-decoration: none;
+}
+
+
+#accordion .ui-state-focus{
+    outline: none;
+}
+
+
+
+
+/* ================================= */
+/* Structure                         */
+/* ================================= */
+
+/* section header  -----------------------*/
+
+#sectionHeader {
+	height:70px;
+}
+#sectionHeader h2 {
+	font-family: Georgia, Times, serif;
+	font-weight: normal;
+	font-size: 30px;
+	margin-top: 20px;
+	text-transform: capitalize;
+	color: #191919;
+}
+
+
+
+
+
+/* nav top -------------------------------*/
+
+nav .top_nav {
+border-radius:8px;
+-webkit-border-radius:8px;
+-moz-border-radius:8px;
+background-color: #191919;
+background-image: linear-gradient(bottom, rgb(25,25,25) 0%, rgb(104,104,104) 100%);
+background-image: -o-linear-gradient(bottom, rgb(25,25,25) 0%, rgb(104,104,104) 100%);
+background-image: -moz-linear-gradient(bottom, rgb(25,25,25) 0%, rgb(104,104,104) 100%);
+background-image: -webkit-linear-gradient(bottom, rgb(25,25,25) 0%, rgb(104,104,104) 100%);
+background-image: -ms-linear-gradient(bottom, rgb(25,25,25) 0%, rgb(104,104,104) 100%);
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0, rgb(25,25,25)),
+	color-stop(1, rgb(104,104,104))
+);
+filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#686868', EndColorStr='#191919');
+-moz-box-shadow: 0px 2px 2px 1px rgba(37,37,37,0.25);
+-webkit-box-shadow: 0px 2px 2px 1px rgba(37,37,37,0.25);
+box-shadow: 0px 2px 2px 1px rgba(37,37,37,0.25);
+/* For IE 8 */
+-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=90, Color='#555555')";
+/* For IE 5.5 - 7 */
+filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=90, Color='#555555');
+}
+
+/*
+nav ul {
+	list-style: none;
+}
+
+nav ul li {
+	float: left;
+	position: relative;
+}
+
+nav ul li a {
+	color: #EEEEEE;
+	display: block;
+	font: 'Century Gothic',futura,'URW Gothic L',Verdana,sans-serif;
+	font-weight: bold;
+	letter-spacing: 1px;
+	line-height: 3em;
+	padding: 0 1.3em;
+	text-decoration: none !important;
+	border-right: 1px solid #686868;
+	text-shadow: 1px 1px 1px #000;
+}
+
+body.choice2 nav ul li a.choice2 {
+	background-color:#999;
+	color:#fff;
+	text-shadow: 1px 1px 1px #686868;	
+}
+
+nav ul li a:link { color:#fff;}
+nav ul li a:visited { color:#fff;}
+nav ul li a:hover { background-color:#686868;}
+*/
+
+/* END nav top -------------------------------*/
+
+
+
+
+#content {
+	padding:25px 0;
+}
+
+
+.sidenav ul {
+	font: 1em "century gothic","helvetica neue",helvetica,sans-serif;
+	margin: 0 0 1em;
+	padding: 0;
+	text-indent: 0;
+}
+.sidenav ul li {
+	border-bottom: 1px dashed #bfbfbf;
+	list-style: none;
+	margin: 0;
+	padding: 0;	
+}
+.sidenav ul li a {
+	color:;
+	display: block;
+	padding: 0.75em 0;
+	text-decoration: none;
+	font-size:1.1em;
+}
+
+
+
+
+
+/* ================================= */
+/* Fonts & Links                     */
+/* ================================= */
+
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1em;
+	font-family: "Source Sans Pro", sans-serif; 
+	font-weight: normal;
+	margin: 10px 0 15px 0;
+	color: #191919;
+}
+h1 { font-size:2.3em;}
+h2 { font-size:1.8em;}
+h3 { font-size:1.5em;}
+h4 { font-size:1.2em;}
+h5 { font-size:1em;}
+
+p { 
+	font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	margin: 5px 0;
+	padding: 5px 0;
+}
+
+#thirdlevelmain ul,
+#thirdlevelmain ul ul,
+#thirdlevelmain ul ul ul {
+padding: 0;
+list-style: disc outside;
+margin: 0 0 15px 16px;
+}
+#thirdlevelmain ul {
+list-style-image: url('/images/ULarrow.png');
+}
+#thirdlevelmain ul ul {
+list-style-image: url('/images/ULULarrow.png');
+}
+#thirdlevelmain ul ul ul {
+list-style-image: url('/images/ULULULarrow.png');
+}
+	#thirdlevelmain li {
+	margin: 3px 0 8px 0;
+	}
+
+ol {
+  margin: 0 0 15px 18px;
+}
+
+/*
+ol {
+  list-style-type: none;
+  margin: 0 0 15px 2px;
+}
+ol > li {
+  counter-increment: customlistcounter;
+}
+ol > li:before {
+  content: counter(customlistcounter) "";
+  display: inline-block;
+  background: #ebebeb;
+  color: #191919;
+  padding: .2em .4em .3em .5em;
+  *padding: .3em;
+  margin: 0 .4em .1em 0;
+  border-radius: .4em;
+}
+ol:first-child {
+  counter-reset: customlistcounter;
+}
+ol {
+  *list-style-type: decimal; /* targets IE6 and IE7 only */
+}
+*/
+
+
+/* ================================= */
+/* Colors                            */
+/* ================================= */
+
+.UAred 			{ background-color:#be0f34; }
+.UAblack 		{ background-color:#000000; } 	 	 
+.UAdarkgrey		{ background-color:#2f3332; } 	
+.UAmidgrey		{ background-color:#5c5c5c; } 	
+.UAbluegrey		{ background-color:#677886; } 	
+.UAdarkred		{ background-color:#650105; } 	
+.UAmidred		{ background-color:#8f0018; } 	
+.UAbrightred	{ background-color:#aa0000; }
+
+	
+/*secondary colors ----------------------*/	 	 	 	 	 
+.UAlace			{ background-color:#edebd2; } 	
+.UAgoldenrod	{ background-color:#f0e48e; } 	
+.UApalegold		{ background-color:#fff091; } 	
+.UAdrab 		{ background-color:#95ac62; } 	
+.UAmeadow		{ background-color:#bcd683; } 	
+.UAmint			{ background-color:#8fb397; } 	
+.UAsteel		{ background-color:#d1d4db; }
+
+
+
+
+
+/* ================================= */
+/* Common Design Elements            */
+/* ================================= */
+
+.UAinset {
+	float:left;
+	margin:0 15px 10px 0;
+}
+
+.UAcaption {
+	display: block;
+	border-bottom: 1px dotted #bfbfbf;
+	background-color: #fff;
+	margin-bottom: 15px;
+}
+
+.shadow {
+	border: 1px solid #fff !important;
+	-moz-box-shadow: 0px 0px 6px 1px rgba(37,37,37,0.5);
+	-webkit-box-shadow: 0px 0px 6px 1px rgba(37,37,37,0.5);
+	box-shadow: 0px 0px 6px 1px rgba(37,37,37,0.5);
+	/* For IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=135, Color='#555555')";
+	/* For IE 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=135, Color='#555555');
+}
+
+.UAcaption p {
+	margin: 5px 0;
+	font-size: .9em;
+	font-style: italic;
+	color: #666;
+}

@@ -38,12 +38,22 @@ body {
 	line-height: 1.3em;
 	color: #000;
 	height: 100%;
-	background: #fff url(/images/OldMain_bkgr.jpg) center top no-repeat;
+	background: #fff url(../images/bgtileGrey.png);
 	/*background-attachment:fixed;*/
 }
 
 
-
+.tess-logo-img
+{
+  position: relative;
+  top: -59px;
+  left: 0px;
+  z-index: 10000;
+  width:232px;
+  height:auto;
+  background: transparent;
+  background-width: 280px;
+}
 
 
 /* Form elements don't inherit font styles by default */

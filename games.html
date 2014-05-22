@@ -19,6 +19,23 @@
   <link href="css/print.css" rel="stylesheet" type="text/css" media="print">
   <link href="http://www.uark.edu/rd_vcad/inc/globalCSS/iconize.css" rel="stylesheet" type="text/css" media="screen">
 
+
+  <script src="js/jquery.flexslider.js"></script>
+          <script src="js/jquery.easing.js"></script>
+          <script src="js/jquery.mousewheel.js"></script>
+          <script type="text/javascript">
+              $(window).load(function() {
+                $('.flexslider').flexslider({
+                  animation: "slide",
+                  randomize: false,
+                  start: function(slider){
+                    $('body').removeClass('loading');
+                  }
+                });
+
+              });
+          </script>
+
   <!--<link href="css/cover.css" rel="stylesheet">-->
 
   <style id="holderjs-style" type="text/css"></style>
@@ -69,57 +86,42 @@
           </ul>
         </div>
       </div>
-
-      <div class="row">
-        <!-- Needed for space between navbar and content-->
-      </div>
-
     </nav>
 
     <div class="container" style="width:100%; max-width:1014px; margin: 0 auto;" id="container2">
+      <link href="css/flexslider.css" rel="stylesheet" type="text/css" media="screen">
       <div class="row">
-        <h2>Tesseract</h2>
-        <p class="lead">Imagine a line. In two dimensions a line becomes a square. In three dimensions this square becomes a cube. In four dimensions, this cube moves through time, connecting to another version of itself. </p>
-        <p class="lead">
-          <a href="./CoverWeb_files/CoverWeb.html" class="btn btn-lg btn-default">Learn more</a>
-        </p>
+        <div class="twelvecol" style="margin: 28px 0 0 0;">
+          <div class="flexslider">
+            <div class="flex-viewport" style="overflow: hidden; position: relative;">
+              <ul class="slides" style="width: 1200%;">
+                <li class="clone" style="width: 984px; float: left; display: block;">
+                  <a href="#">
+                    <img src="images/hopn.png" class="rounded-border" />
+                  </a>
+                </li>
+                <li class="clone" style="width: 984px; float: left; display: block;">
+                  <a href="#">
+                    <img src="images/tesslogo.png" class="rounded-border" />
+                  </a>
+                </li>
+                <li class="clone" style="width: 984px; float: left; display: block;">
+                  <a href="#">
+                    <img src="images/tesslogo-white.png" class="rounded-border" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+        </div>
       </div>
     </div>
 
 
   </div>
 
-  <!--<div class="site-wrapper">
-    <div class="site-wrapper-inner">
-      
-      <div class="row">
-        <span class="col-md-10 col-md-offset-1">
-          <a class="brand" href="index.html"><img src="images/tesslogo-white.png" class="tess-logo-img" /></a>
-          <nav class="navbar navbar-inverse ">
-            <div class="container-fluid">
-              <div class="row">
 
-                
-                <ul class="nav navbar-nav">
-                  <li><a href="#">Home <span class="glyphicon glyphicon-home"></span></a></li>
-                  <li><a href="#">Games <span class="glyphicon glyphicon-screenshot"></span></a></li>
-                  <li><a href="#">The Team <span class="glyphicon glyphicon-eye-open"></span></a></li>
-                  <li><a href="#">Blog <span class="glyphicon glyphicon-tasks"></span></a></li>
-                </ul>
-              </div>
-            </div>
-          </nav> 
-        </span>
-      </div>
-      <div class="row">
-        <span class="col-md-10 col-md-offset-1">
-          <h1 class="cover-heading">Tesseract</h1>
-          <p class="lead">Imagine a line. In two dimensions a line becomes a square. In three dimensions this square becomes a cube. In four dimensions, this cube moves through time, connecting to another version of itself. </p>
-          <p class="lead">
-            <a href="./CoverWeb_files/CoverWeb.html" class="btn btn-lg btn-default">Learn more</a>
-          </p>
-        </span>
-      </div>-->
 
         <div class="mastfoot">
           <div class="inner">
@@ -132,11 +134,9 @@
 
   </div>
 
-  <!-- Bootstrap core JavaScript
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
   <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.js"></script>
   <script src="js/docs.min.js"></script>
   
 

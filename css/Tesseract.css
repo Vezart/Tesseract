@@ -1,0 +1,19 @@
+
+
+.TeamMember {
+	height: 200px;
+}
+
+.TeamMemberPic {
+	width: 120px;
+	float: left;
+}
+
+#TeamMemberDescription {
+	position: relative;
+	margin-left: 140px;
+}
+
+#TeamList {
+	list-style-type: none;
+}

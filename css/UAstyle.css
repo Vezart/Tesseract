@@ -275,7 +275,7 @@ text-decoration: none;
 
 nav .top_nav {
 border-radius:8px;
--webkit-border-radius:8px;
+-webkit-border-radius: 8px 8px 0px 0px;
 -moz-border-radius:8px;
 background-color: #191919;
 background-image: linear-gradient(bottom, rgb(25,25,25) 0%, rgb(104,104,104) 100%);

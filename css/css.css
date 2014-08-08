@@ -9,6 +9,7 @@
 }
 
 #container2 {
+	position: relative;
 	-webkit-border-radius: 0px 0px 8px 8px;
 	-moz-border-radius: 8px;
 	-o-border-radius: 0px 0px 8px 8px;
@@ -21,7 +22,8 @@
 	margin-bottom: 0px;
 	margin-left: auto;
 	top: 0px;
-	background-color: #FFFFFF;
+	background-color: #D3D3D2;
+	color: #191919;
 }
 
 #container3 {

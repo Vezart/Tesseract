@@ -14,27 +14,22 @@
   <link href="css/1140.css" rel="stylesheet" tpe="text/css">
   <link href="css/UAheader.css" rel="stylesheet" type="text/css">
   <link href="css/UAstyle.css" rel="stylesheet" type="text/css">
+  <link href="css/UAfooter.css" rel="stylesheet" type="text/css">
   <link href="css/css.css" rel="stylesheet" type="text/css">
   <link href="css/top_nav.css" rel="stylesheet" type="text/css">
   <link href="css/print.css" rel="stylesheet" type="text/css" media="print">
   <link href="http://www.uark.edu/rd_vcad/inc/globalCSS/iconize.css" rel="stylesheet" type="text/css" media="screen">
 
+  <!--<script src="js/jquery-1.8.2.js"></script>-->
+  <script src="js/jquery.hoverIntent.minified.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 
-  <script src="js/jquery.flexslider.js"></script>
-          <script src="js/jquery.easing.js"></script>
-          <script src="js/jquery.mousewheel.js"></script>
-          <script type="text/javascript">
-              $(window).load(function() {
-                $('.flexslider').flexslider({
-                  animation: "slide",
-                  randomize: false,
-                  start: function(slider){
-                    $('body').removeClass('loading');
-                  }
-                });
 
-              });
-          </script>
+  <!--for flexslider-->
+  <link href="css/flexslider.css" rel="stylesheet" type="text/css" media="screen"/>
+  <script src="js/modernizr.js"></script>
+
+  <script src="js/ContentSizer.js"></script>
 
   <!--<link href="css/cover.css" rel="stylesheet">-->
 
@@ -78,67 +73,181 @@
         <div class="top_nav">
           
           <ul id="menu">
-            <li class="logo"><img src="images/tesslogo-white.png" class="tess-logo-img"></li>
+            <li class="logo"><a href="index.html"><img src="images/tesslogo-white.png" class="tess-logo-img"></a></li>
             <li class="first"><a href="index.html">Home</a></li>
-            <li class="reg"><a href="games.html">Games</a></li>
-            <li class="reg"><a href="team.html">The Team</a></li>
-            <li class="reg"><a href="blog.html">Blog</a></li>
+            <li class="reg">
+              <a href="games.html">Games</a>
+              <div class="dropdown_2columns">
+                <div class="col_2">
+                  <ul>
+                    <li><a href="mythosunbound.html">Mythos Unbound</a></li>
+                    <li><a href="saeculum.html">Saeculum</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="reg">
+              <a href="abouttesseract.html">About</a>
+              <div class="dropdown_2columns">
+                <div class="col_2">
+                  <ul>
+                    <li><a href="abouttesseract.html">Tesseract</a></li>
+                    <li><a href="team.html">The Team</a></li>
+                    <li><a href="mission.html">Our Mission</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="reg">
+              <a href="contact.html">Contact Us</a>
+              <div class="dropdown_2columns">
+                <div class="col_2">
+                  <ul>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="userresearch.html">User Research</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
           </ul>
         </div>
       </div>
+
+      <div class="row">
+        <!-- Needed for space between navbar and content-->
+      </div>
+
     </nav>
 
+
+    <!--Actual Body-->
     <div class="container" style="width:100%; max-width:1014px; margin: 0 auto;" id="container2">
-      <link href="css/flexslider.css" rel="stylesheet" type="text/css" media="screen">
-      <div class="row">
-        <div class="twelvecol" style="margin: 28px 0 0 0;">
-          <div class="flexslider">
-            <div class="flex-viewport" style="overflow: hidden; position: relative;">
-              <ul class="slides" style="width: 1200%;">
-                <li class="clone" style="width: 984px; float: left; display: block;">
-                  <a href="#">
-                    <img src="images/hopn.png" class="rounded-border" />
-                  </a>
-                </li>
-                <li class="clone" style="width: 984px; float: left; display: block;">
-                  <a href="#">
-                    <img src="images/tesslogo.png" class="rounded-border" />
-                  </a>
-                </li>
-                <li class="clone" style="width: 984px; float: left; display: block;">
-                  <a href="#">
-                    <img src="images/tesslogo-white.png" class="rounded-border" />
-                  </a>
-                </li>
-              </ul>
+      <div id="contentHolder">
+        
+          <div class="row">
+            <div class="twelvecol" style="margin: 28px 0 0 0;">
+              <section class="slider">
+              <div class="flexslider">
+                <ul class="slides">
+                  <li>
+                    <a href="#">
+                      <img src="images/hopn.png" class="rounded-border" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="images/tesslogo.png" class="rounded-border" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="images/tesslogo-white.png" class="rounded-border" />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              </section>
             </div>
           </div>
-          
-        </div>
+        
+        <div style="height:30px; width: 300px; "></div>
       </div>
-    </div>
 
+      
 
-  </div>
+      <!--Body-Footer-->
+      <footer>
+        <div class="row" id="footerInfo">
+          <div class="threecol UAfooterList">
+            <h4>
+              <a href="http://tesseract.uark.edu/">Tesseract<br>at the <br>University of Arkansas</a>
+            </h4>
+            <p>
+              J.B. hunt
+              <br>
+              Fayetteville, AR  72701
+            </p>
+            <p>
+              <a href="mailto:tesseract@uark.edu">tesseract@uark.edu</a>
+            </p>
+            <h3>
+              Phone Number?
+            </h3>
+          </div>
+          <div class="threecol UAfooterList">
+            <ul>
+              <li><a href="contact_us.html" title="Contact Us">Contact Us</a></li>
+              <li><a href="team.html" title="The Team">The Team</a></li>
+            </ul>
+          </div>
+          <div class="threecol">
+            <h4>Stay Connected</h4>
+            <p>
+              <a href="http://www.facebook.com/pages/Fayetteville-AR/TesseractInteractive" target="_blank">
+                <img src="images/social_fb.png" alt="facebook" width="48" height="50">
+              </a>
+              <a href="http://twitter.com/UATesseract" target="_blank">
+                <img src="images/social_tw2.png" alt="@UATesseract" width="48" height="50">
+              </a>
 
+            </p>
+            <br><br>
 
-
-        <div class="mastfoot">
-          <div class="inner">
-            <p>Tesseract is housed at the <a href="https://www.uark.edu">University of Arkansas</a></p>
+          </div>
+          <div class="threecol last">
+            <div id="UAconnect">
+              <address>
+                <a href="http://www.uark.edu" target="_blank">
+                  <img src="images/UA_LogoWWW.png" alt="University of Arkansas">
+                </a>
+                <br>
+                1 University of Arkansas
+                <br>
+                Fayetteville, Arkansas  72701
+                <br>
+                <a id="UAgift" href="http://development.uark.edu/">
+                  <span>
+                    "make a "
+                    <strong>gift</strong>
+                  </span>
+                </a>
+              </address>
+            </div>
           </div>
         </div>
-
-
+      </footer>
     </div>
-
   </div>
 
-  ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script src="js/jquery.min.js"></script>
-  <script src="js/docs.min.js"></script>
-  
+
+
+
+  <footer>
+    
+    <section id="UAfooterFooter">
+      <div class="row">
+        <div class="twelvecol last">
+          <ul>
+            <li><a href="http://www.uark.edu">Home</a></li>
+            <li><a href="http://uapd.uark.edu">University Police</a></li>
+            <li><a href="http://emergency.uark.edu">Emergency Information</a></li>
+            <li><a href="http://libinfo.uark.edu">Libraries</a></li>
+            <li><a href="http://universityrelations.uark.edu">University Relations</a></li>
+            <li><a href="http://its.uark.edu">Information Technology Services</a></li>
+            <li><a class="last" href="http://vcfa.uark.edu/2525.php">Fraud Prevention</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </footer>
+
+  <script defer src="js/jquery.flexslider.js"></script>
+  <script type="text/javascript">
+    &(window).load(function() {
+      $('.flexslider').flexslider();
+    });
+  </script>
 
 </body>
 </html>
+

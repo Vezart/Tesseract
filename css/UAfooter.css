@@ -1,0 +1,294 @@
+@charset "utf-8";
+
+/**FOOTER**/
+
+footer {
+overflow: hidden;
+clear: both;
+}
+
+footer, .push {
+height: auto;
+clear: both;
+}
+
+footer .container {
+padding: 15px 0 10px;
+margin-top: 15px;
+margin-bottom: 15px;
+border: 1px solid #eeeeee;
+border-radius:8px;
+-webkit-border-radius:8px;
+-moz-border-radius:8px;
+background-color: #f7f7f7;
+background-image: linear-gradient(bottom, #fbfbfb 10%, #f7f7f7 90%);
+background-image: -o-linear-gradient(bottom, #fbfbfb 10%, #f7f7f7 90%);
+background-image: -moz-linear-gradient(bottom, #fbfbfb 10%, #f7f7f7 90%);
+background-image: -webkit-linear-gradient(bottom, #fbfbfb 10%, #f7f7f7 90%);
+background-image: -ms-linear-gradient(bottom, #fbfbfb 10%, #f7f7f7 90%);
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.1, #fbfbfb),
+	color-stop(0.9, #f7f7f7)
+);
+filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#fbfbfb', EndColorStr='#f7f7f7');
+}
+
+footer h3, footer h4 {
+padding:0;
+margin:0px 0 4px 0;
+color: #666;
+font-family: "Source Sans Pro", sans-serif;
+font-weight: normal;
+margin-bottom: 5px;
+text-transform: uppercase;
+}
+
+footer h3 {
+font-size: 1.5em;
+line-height: 1.5em;
+}
+
+footer h4 {
+font-size: 1.4em;
+}
+
+footer ul {
+list-style: none;
+}
+	footer ul li {
+	margin-bottom:10px;
+	line-height:1em;
+	}
+
+footer #UAlistsocial {
+clear:right;
+padding-bottom:55px;
+}
+
+footer #UAsocialmedia li a.UAsocialicon {
+margin:0 10 0 0;
+padding-left:35px;
+min-height:32px;
+width:90px;
+display: inline-block;
+float:left;
+}
+	footer #UAsocialmedia li a.UAsocialicon:hover {
+	border-bottom:0;
+	}
+
+footer .youtube 		{ background: url("../images/UAsprites.png")  	-10px -56px  no-repeat; }
+footer .facebook		{ background: url("../images/UAsprites.png") 	-10px -108px no-repeat; }
+footer .foursquare		{ background: url("../images/UAsprites.png") 	-10px -160px no-repeat; }
+footer .twitter			{ background: url("../images/UAsprites.png") 	-10px -211px no-repeat; }
+footer #giveNowButton 	{ background: url("../images/UAsprites.png") 	-10px -263px no-repeat; }
+
+footer #giveNowButton {
+display: block;
+margin-top:10px;
+width: 163px;
+height:60px; 
+}
+
+footer .UAfooterList li{
+padding: 0 0 0 12px;
+background-image: url(../images/ULULarrow.png);
+background-repeat: no-repeat;
+}
+
+footer .primary-button {
+color:#fff !important;
+background-color: #650105;
+background-image: linear-gradient(100% 100% 90deg, #8F0018, #650105) !important;
+background-image: -o-linear-gradient(100% 100% 90deg, #8F0018, #650105) !important;
+background-image: -moz-linear-gradient(100% 100% 90deg, #8F0018, #650105) !important;
+background-image: -webkit-linear-gradient(100% 100% 90deg, #8F0018, #650105) !important;
+background-image: -ms-linear-gradient(100% 100% 90deg, #8F0018, #650105) !important;
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0, #8F0018),
+	color-stop(1, #650105)
+);
+border: 1px solid #333333;
+border-radius: 5px 5px 5px 5px;
+box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+display: inline-block;
+float: left;
+font: 15px/15px "Gill Sans Std","Gill Sans",Verdana,Arial,sans-serif;
+margin: 0 45px 0 0;
+padding: 6px 15px;
+text-decoration: none;
+width: auto;
+}
+
+footer a.primary-button:hover {
+color:#fff;
+background-color: #712023;
+background-image: linear-gradient(100% 100% 90deg, #8f2034, #712023) !important;
+background-image: -o-linear-gradient(100% 100% 90deg, #8f2034, #712023) !important;
+background-image: -moz-linear-gradient(100% 100% 90deg, #8f2034, #712023) !important;
+background-image: -webkit-linear-gradient(100% 100% 90deg, #8f2034, #712023) !important;
+background-image: -ms-linear-gradient(100% 100% 90deg, #8f2034, #712023) !important;
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0, #8f2034),
+	color-stop(1, #712023)
+);
+text-decoration: none !important;
+border: 1px solid #333 !important;
+}
+
+address {
+	text-align:right;
+}
+
+footer #UAgift {
+display: inline-block;
+margin: 10px 0 4px 0;
+padding: 0px 18px 8px 20px;
+color: #fff;
+font: 16px/16px "Gill Sans Std","Gill Sans",Verdana,Arial,sans-serif;
+text-decoration: none;
+background-color: #191919;
+background-image: linear-gradient(bottom, rgb(25,25,25) 0%, rgb(104,104,104) 100%);
+background-image: -o-linear-gradient(bottom, rgb(25,25,25) 0%, rgb(104,104,104) 100%);
+background-image: -moz-linear-gradient(bottom, rgb(25,25,25) 0%, rgb(104,104,104) 100%);
+background-image: -webkit-linear-gradient(bottom, rgb(25,25,25) 0%, rgb(104,104,104) 100%);
+background-image: -ms-linear-gradient(bottom, rgb(25,25,25) 0%, rgb(104,104,104) 100%);
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0, rgb(25,25,25)),
+	color-stop(1, rgb(104,104,104))
+);
+-webkit-border-radius: 6px;
+-moz-border-radius: 6px;
+border-radius: 6px;
+border: 1px solid #252525;
+-moz-box-shadow: 0px 2px 2px 1px rgba(37,37,37,0.25);
+-webkit-box-shadow: 0px 2px 2px 1px rgba(37,37,37,0.25);
+box-shadow: 0px 2px 2px 1px rgba(37,37,37,0.25);
+/* For IE 8 */
+-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=90, Color='#555555')";
+/* For IE 5.5 - 7 */
+filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=90, Color='#555555');
+}
+
+footer #UAgift:hover{
+background-color: #191919;
+background-image: linear-gradient(bottom, rgb(104,104,104) 0%, rgb(25,25,25) 100%);
+background-image: -o-linear-gradient(bottom, rgb(104,104,104) 0%, rgb(25,25,25) 100%);
+background-image: -moz-linear-gradient(bottom, rgb(104,104,104) 0%, rgb(25,25,25) 100%);
+background-image: -webkit-linear-gradient(bottom, rgb(104,104,104) 0%, rgb(25,25,25) 100%);
+background-image: -ms-linear-gradient(bottom, rgb(104,104,104) 0%, rgb(25,25,25) 100%);
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0, rgb(104,104,104)),
+	color-stop(1, rgb(25,25,25))
+);
+}
+
+	footer #UAgift span {
+	padding:6px 16px 2px;
+	display: block;
+	width:auto;
+	font-size:20px;
+	line-height:0.8em;
+	}
+
+
+.push {
+min-height: 30px;
+}
+
+
+
+/* Sub Footer */
+#contentHolder {
+	padding-bottom: 258px;
+}
+
+footer #footerInfo {
+	position: absolute;
+	height: auto;
+	left: 0px;
+	right: 0px;
+	bottom: 14px;
+}
+
+footer #UAfooterFooter {
+	float: bottom;
+zoom: 1;
+display: block;
+overflow: auto;
+padding: 15px 0px 0px 0px;
+margin: 30px 0 0 0;
+min-height: 30px;
+font: 0.8em 'Century Gothic',futura,'URW Gothic L',Verdana,sans-serif !important;
+text-shadow: 1px 1px 1px #64000f;
+background-color: #9f1b32;
+background-image: linear-gradient(bottom, rgb(159,27,50) 0%, rgb(127,18,34) 50%);
+background-image: -o-linear-gradient(bottom, rgb(159,27,50) 0%, rgb(127,18,34) 50%);
+background-image: -moz-linear-gradient(bottom, rgb(159,27,50) 0%, rgb(127,18,34) 50%);
+background-image: -webkit-linear-gradient(bottom, rgb(159,27,50) 0%, rgb(127,18,34) 50%);
+background-image: -ms-linear-gradient(bottom, rgb(159,27,50) 0%, rgb(127,18,34) 50%);
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0, rgb(159,27,50)),
+	color-stop(0.50, rgb(127,18,34))
+	);
+filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#7f1222', EndColorStr='#9f1b32')
+-moz-box-shadow: 0px 0px 6px 1px rgba(37,37,37,0.5);
+-webkit-box-shadow: 0px 0px 6px 1px rgba(37,37,37,0.5);
+box-shadow: 0px 0px 6px 1px rgba(37,37,37,0.5);
+/* For IE 8 */
+-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=90, Color='#555555')";
+/* For IE 5.5 - 7 */
+filter: progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=90, Color='#555555');
+clear: both;
+}
+
+footer #UAfooterFooter ul {
+margin:0;
+padding:0;
+}
+
+footer #UAfooterFooter ul li {
+float: left;
+margin-left: 10px;
+padding-right: 0px;
+}
+
+footer #UAfooterFooter ul li a {
+color:#fff;
+border-right: 1px solid #e0b9c0;
+padding-right: 10px;
+text-decoration: none;
+}
+
+footer #UAfooterFooter ul li a:hover {
+border-bottom:0px;
+text-decoration:underline;
+}
+
+footer #UAfooterFooter ul li a.last {
+border-right: none;
+padding-right: 0;
+}
+
+footer #UAfooterFooter li.first {
+padding-left: 0px;
+margin-left: 0px;
+}

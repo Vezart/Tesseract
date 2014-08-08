@@ -14,11 +14,17 @@
   <link href="css/1140.css" rel="stylesheet" tpe="text/css">
   <link href="css/UAheader.css" rel="stylesheet" type="text/css">
   <link href="css/UAstyle.css" rel="stylesheet" type="text/css">
+  <link href="css/UAfooter.css" rel="stylesheet" type="text/css">
   <link href="css/css.css" rel="stylesheet" type="text/css">
   <link href="css/top_nav.css" rel="stylesheet" type="text/css">
   <link href="css/print.css" rel="stylesheet" type="text/css" media="print">
   <link href="http://www.uark.edu/rd_vcad/inc/globalCSS/iconize.css" rel="stylesheet" type="text/css" media="screen">
-  <link href="css/Tesseract.css" rel="stylesheet" type="text/css">
+
+  <script src="js/jquery-1.8.2.js"></script>
+  <script src="js/jquery.hoverIntent.minified.js"></script>
+  <script src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
+
+  <script src="js/ContentSizer.js"></script>
 
   <!--<link href="css/cover.css" rel="stylesheet">-->
 
@@ -62,11 +68,42 @@
         <div class="top_nav">
           
           <ul id="menu">
-            <li class="logo"><img src="images/tesslogo-white.png" class="tess-logo-img"></li>
+            <li class="logo"><a href="index.html"><img src="images/tesslogo-white.png" class="tess-logo-img"></a></li>
             <li class="first"><a href="index.html">Home</a></li>
-            <li class="reg"><a href="games.html">Games</a></li>
-            <li class="reg"><a href="team.html">The Team</a></li>
-            <li class="reg"><a href="blog.html">Blog</a></li>
+            <li class="reg">
+              <a href="games.html">Games</a>
+              <div class="dropdown_2columns">
+                <div class="col_2">
+                  <ul>
+                    <li><a href="mythosunbound.html">Mythos Unbound</a></li>
+                    <li><a href="saeculum.html">Saeculum</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="reg">
+              <a href="abouttesseract.html">About</a>
+              <div class="dropdown_2columns">
+                <div class="col_2">
+                  <ul>
+                    <li><a href="abouttesseract.html">Tesseract</a></li>
+                    <li><a href="team.html">The Team</a></li>
+                    <li><a href="mission.html">Our Mission</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="reg">
+              <a href="contact.html">Contact Us</a>
+              <div class="dropdown_2columns">
+                <div class="col_2">
+                  <ul>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="userresearch.html">User Research</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
           </ul>
         </div>
       </div>
@@ -77,84 +114,154 @@
 
     </nav>
 
+
+    <!--Actual Body-->
     <div class="container" style="width:100%; max-width:1014px; margin: 0 auto;" id="container2">
-      <div class="row">
-        <h2>The Team</h2>
-        <p class="lead">Tesseract is made up of a combination of professors, students, and recent graduates.</p>
-        <ul>
-          <li id="TeamList">
-            <div class="TeamMember">
-              <img class="TeamMemberPic" src="images/dfred.jpg" />
-              <div id="TeamMemberDescription">
-                <h3>David Fredrick</h3>
-                <h4>Role: Producer</h4>
+      <div id="contentHolder">
+        <div class="row">
+          <h2>The Team</h2>
+          <p class="lead">Tesseract is made up of a combination of professors, students, and recent graduates.</p>
+          <ul>
+            <li id="TeamList">
+              <div class="TeamMember">
+                <img class="TeamMemberPic" src="images/dfred.jpg" />
+                <div id="TeamMemberDescription">
+                  <h3>David Fredrick</h3>
+                  <h4>Role: Producer</h4>
+                  <p>Description of who this is and what they do.</p>
+                </div>
+              </div>
+            </li>
+            <li id="TeamList">
+              <div class="TeamMember">
+                <div id="TeamMemberDescription">
+                  <h3>Keenan Cole</h3>
+                  <h4>Role: Technical Director, programmer</h4>
+                  <p>Description of who this is and what they do.</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="TeamMember">
+                <h3>Greg Rogers</h3>
+                <h4>Role: Lead Designer, Narrative Lead</h4>
                 <p>Description of who this is and what they do.</p>
               </div>
-            </div>
-          </li>
-          <li id="TeamList">
-            <div class="TeamMember">
-              <div id="TeamMemberDescription">
-                <h3>Keenan Cole</h3>
-                <h4>Role: Technical Director, programmer</h4>
+            </li>
+            <li>
+              <div class="TeamMember">
+                <h3>Taylor Yust</h3>
+                <h4>Role: Lead Programmer, Systems Designer</h4>
                 <p>Description of who this is and what they do.</p>
               </div>
-            </div>
-          </li>
-          <li>
-            <div class="TeamMember">
-              <h3>Greg Rogers</h3>
-              <h4>Role: Lead Designer, Narrative Lead</h4>
-              <p>Description of who this is and what they do.</p>
-            </div>
-          </li>
-          <li>
-            <div class="TeamMember">
-              <h3>Taylor Yust</h3>
-              <h4>Role: Lead Programmer, Systems Designer</h4>
-              <p>Description of who this is and what they do.</p>
-            </div>
-          </li>
-          <li>
-            <div class="TeamMember">
-              <h3>Chloe Costello</h3>
-              <h4>Role: Lead Artist, Lead Level Designer</h4>
-              <p>Description of who this is and what they do.</p>
-            </div>
-          </li>
-          <li>
-            <div class="TeamMember">
-              <h3>Kjartan Kennedy</h3>
-              <h4>Role: Programmer, User Experience Lead</h4>
-              <p>Description of who this is and what they do.</p>
-            </div>
-          </li>
-        </ul>
+            </li>
+            <li>
+              <div class="TeamMember">
+                <h3>Chloe Costello</h3>
+                <h4>Role: Lead Artist, Lead Level Designer</h4>
+                <p>Description of who this is and what they do.</p>
+              </div>
+            </li>
+            <li>
+              <div class="TeamMember">
+                <h3>Kjartan Kennedy</h3>
+                <h4>Role: Programmer, User Experience Lead</h4>
+                <p>Description of who this is and what they do.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
 
+      
 
-  </div>
+      <!--Body-Footer-->
+      <footer>
+        <div class="row" id="footerInfo">
+          <div class="threecol UAfooterList">
+            <h4>
+              <a href="http://tesseract.uark.edu/">Tesseract<br>at the <br>University of Arkansas</a>
+            </h4>
+            <p>
+              J.B. hunt
+              <br>
+              Fayetteville, AR  72701
+            </p>
+            <p>
+              <a href="mailto:tesseract@uark.edu">tesseract@uark.edu</a>
+            </p>
+            <h3>
+              Phone Number?
+            </h3>
+          </div>
+          <div class="threecol UAfooterList">
+            <ul>
+              <li><a href="contact_us.html" title="Contact Us">Contact Us</a></li>
+              <li><a href="team.html" title="The Team">The Team</a></li>
+            </ul>
+          </div>
+          <div class="threecol">
+            <h4>Stay Connected</h4>
+            <p>
+              <a href="http://www.facebook.com/pages/Fayetteville-AR/TesseractInteractive" target="_blank">
+                <img src="images/social_fb.png" alt="facebook" width="48" height="50">
+              </a>
+              <a href="http://twitter.com/UATesseract" target="_blank">
+                <img src="images/social_tw2.png" alt="@UATesseract" width="48" height="50">
+              </a>
 
+            </p>
+            <br><br>
 
-        <div class="mastfoot">
-          <div class="inner">
-            <p>Tesseract is housed at <a href="https://www.uark.edu">the University of Arkansas</a></p>
+          </div>
+          <div class="threecol last">
+            <div id="UAconnect">
+              <address>
+                <a href="http://www.uark.edu" target="_blank">
+                  <img src="images/UA_LogoWWW.png" alt="University of Arkansas">
+                </a>
+                <br>
+                1 University of Arkansas
+                <br>
+                Fayetteville, Arkansas  72701
+                <br>
+                <a id="UAgift" href="http://development.uark.edu/">
+                  <span>
+                    "make a "
+                    <strong>gift</strong>
+                  </span>
+                </a>
+              </address>
+            </div>
           </div>
         </div>
-
-
+      </footer>
     </div>
-
   </div>
 
-  <!-- Bootstrap core JavaScript
-  ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.js"></script>
-  <script src="js/docs.min.js"></script>
-  
+
+
+
+  <footer>
+    
+    <section id="UAfooterFooter">
+      <div class="row">
+        <div class="twelvecol last">
+          <ul>
+            <li><a href="http://www.uark.edu">Home</a></li>
+            <li><a href="http://uapd.uark.edu">University Police</a></li>
+            <li><a href="http://emergency.uark.edu">Emergency Information</a></li>
+            <li><a href="http://libinfo.uark.edu">Libraries</a></li>
+            <li><a href="http://universityrelations.uark.edu">University Relations</a></li>
+            <li><a href="http://its.uark.edu">Information Technology Services</a></li>
+            <li><a class="last" href="http://vcfa.uark.edu/2525.php">Fraud Prevention</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </footer>
 
 </body>
 </html>
+
+    

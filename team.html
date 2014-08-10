@@ -18,6 +18,7 @@
   <link href="css/css.css" rel="stylesheet" type="text/css">
   <link href="css/top_nav.css" rel="stylesheet" type="text/css">
   <link href="css/print.css" rel="stylesheet" type="text/css" media="print">
+  <link href="css/Tesseract.css" rel="stylesheet" type="text/css">
   <link href="http://www.uark.edu/rd_vcad/inc/globalCSS/iconize.css" rel="stylesheet" type="text/css" media="screen">
 
   <script src="js/jquery-1.8.2.js"></script>
@@ -107,11 +108,6 @@
           </ul>
         </div>
       </div>
-
-      <div class="row">
-        <!-- Needed for space between navbar and content-->
-      </div>
-
     </nav>
 
 
@@ -121,55 +117,129 @@
         <div class="row">
           <h2>The Team</h2>
           <p class="lead">Tesseract is made up of a combination of professors, students, and recent graduates.</p>
-          <ul>
-            <li id="TeamList">
-              <div class="TeamMember">
-                <img class="TeamMemberPic" src="images/dfred.jpg" />
-                <div id="TeamMemberDescription">
-                  <h3>David Fredrick</h3>
-                  <h4>Role: Producer</h4>
-                  <p>Description of who this is and what they do.</p>
-                </div>
-              </div>
-            </li>
-            <li id="TeamList">
-              <div class="TeamMember">
-                <div id="TeamMemberDescription">
-                  <h3>Keenan Cole</h3>
-                  <h4>Role: Technical Director, programmer</h4>
-                  <p>Description of who this is and what they do.</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="TeamMember">
-                <h3>Greg Rogers</h3>
-                <h4>Role: Lead Designer, Narrative Lead</h4>
-                <p>Description of who this is and what they do.</p>
-              </div>
-            </li>
-            <li>
-              <div class="TeamMember">
-                <h3>Taylor Yust</h3>
-                <h4>Role: Lead Programmer, Systems Designer</h4>
-                <p>Description of who this is and what they do.</p>
-              </div>
-            </li>
-            <li>
-              <div class="TeamMember">
-                <h3>Chloe Costello</h3>
-                <h4>Role: Lead Artist, Lead Level Designer</h4>
-                <p>Description of who this is and what they do.</p>
-              </div>
-            </li>
-            <li>
-              <div class="TeamMember">
-                <h3>Kjartan Kennedy</h3>
-                <h4>Role: Programmer, User Experience Lead</h4>
-                <p>Description of who this is and what they do.</p>
-              </div>
-            </li>
-          </ul>
+          <a href="#hideleaders" class="hideleaders" id="hideleaders">Leadership</a>
+          <a href="" class="showleaders" id="showleaders">Leadership</a>
+          <a href="#hidedesigners" class="hidedesigners" id="hidedesigners">Designers</a>
+          <a href="" class="showdesigners" id="showdesigners">Designers</a>
+          <a href="#hideprogrammers" class="hideprogrammers" id="hideprogrammers">Programmers</a>
+          <a href="" class="showprogrammers" id="showprogrammers">Programmers</a>
+          <a href="#hideartists" class="hideartists" id="hideartists">Artists</a>
+          <a href="" class="showartists" id="showartists">Artists</a>
+          <a href="#hidesound" class="hidesound" id="hidesound">Sound Designer</a>
+          <a href="" class="showsound" id="showsound">Sound Designer</a>
+          <br>
+          <br>
+          <!--LEADERSHIP-->
+          <div class="TeamMember" id="leader">
+            <img class="TeamMemberPic" src="images/dfred.jpg" />
+            <div id="TeamMemberDescription">
+              <h3>David Fredrick</h3>
+              <h4>Role: Producer</h4>
+              <p>Bio coming soon.</p>
+            </div>
+          </div>
+          <div class="TeamMember" id="leader">
+            <div id="TeamMemberDescription">
+              <h3>Keenan Cole</h3>
+              <h4>Role: Technical Director, programmer</h4>
+              <p>Bio coming soon.</p>
+            </div>
+          </div>
+          <!--DESIGNERS-->
+          <div class="TeamMember" id="designer">
+            <div id="TeamMemberDescription">
+              <h3>Greg Rogers</h3>
+              <h4>Role: Lead Designer, Narrative Lead</h4>
+              <p>Bio coming soon.</p>
+            </div>
+          </div>
+          <div class="TeamMember" id="designer">
+            <div id="TeamMemberDescription">
+              <h3>Will Loder</h3>
+              <h4>Role: Designer, Quality Assurance</h4>
+              <p>Bio coming soon.</p>
+            </div>
+          </div>
+          <div class="TeamMember" id="designer">
+            <div id="TeamMemberDescription">
+              <h3>Riley Turben</h3>
+              <h4>Role: Designer</h4>
+              <p>Bio coming soon.</p>
+            </div>
+          </div>
+          <div class="TeamMember" id="designer">
+            <div id="TeamMemberDescription">
+              <h3>Adam Schoelz</h3>
+              <h4>Role: Designer</h4>
+              <p>Bio coming soon.</p>
+            </div>
+          </div>
+          <!--PROGRAMMERS-->
+          <div class="TeamMember" id="programmer">
+            <div id="TeamMemberDescription">
+              <h3>Taylor Yust</h3>
+              <h4>Role: Lead Programmer, Systems Designer</h4>
+              <p>Bio coming soon.</p>
+            </div>
+          </div>
+          <div class="TeamMember" id="programmer">
+            <div id="TeamMemberDescription">
+              <h3>Kjartan Kennedy</h3>
+              <h4>Role: Programmer, User Experience Lead</h4>
+              <p>Bio coming soon.</p>
+            </div>
+          </div>
+          <!--ARTISTS-->
+          <div class="TeamMember" id="artist">
+            <div id="TeamMemberDescription">
+              <h3>Chloe Costello</h3>
+              <h4>Role: Lead Artist, Lead Level Designer</h4>
+              <p>Bio coming soon.</p>
+            </div>
+          </div>
+          <div class="TeamMember" id="artist">
+            <div id="TeamMemberDescription">
+              <h3>Dylan Craig</h3>
+              <h4>Role: Artist</h4>
+              <p>Bio coming soon.</p>
+            </div>
+          </div>
+          <div class="TeamMember" id="artist">
+            <div id="TeamMemberDescription">
+              <h3>Tyler Johnson</h3>
+              <h4>Role: Artist</h4>
+              <p>Bio coming soon.</p>
+            </div>
+          </div>
+          <div class="TeamMember" id="artist">
+            <div id="TeamMemberDescription">
+              <h3>Cassie Travaille</h3>
+              <h4>Role: Artist</h4>
+              <p>Bio coming soon.</p>
+            </div>
+          </div>
+          <div class="TeamMember" id="artist">
+            <div id="TeamMemberDescription">
+              <h3>Amy Richter</h3>
+              <h4>Role: Artist</h4>
+              <p>Bio coming soon.</p>
+            </div>
+          </div>
+          <div class="TeamMember" id="artist">
+            <div id="TeamMemberDescription">
+              <h3>Karl Northfell</h3>
+              <h4>Role: Artist</h4>
+              <p>Bio coming soon.</p>
+            </div>
+          </div>
+          <!--SOUND-->
+          <div class="TeamMember" id="sound">
+            <div id="TeamMemberDescription">
+              <h3>Jeff Payne</h3>
+              <h4>Role: Composer, Sound Designer</h4>
+              <p>Bio coming soon.</p>
+            </div>
+          </div>
         </div>
       </div>
 

@@ -1,7 +1,96 @@
+.showleaders {
+	display: none;
+}
 
+.hideleaders {
+	display: inline;
+}
+
+.hideleaders:target + .showleaders {
+    display: inline; 
+}
+.hideleaders:target {
+    display: none; 
+}
+.hideleaders:target ~ #leader {
+    display:inline; 
+}
+
+.showdesigners {
+	display: none;
+}
+
+.hidedesigners {
+	display: inline;
+}
+
+.hidedesigners:target + .showdesigners {
+    display: inline; 
+}
+.hidedesigners:target {
+    display: none; 
+}
+.hidedesigners:target ~ #designer {
+    display:inline; 
+}
+
+.showprogrammers {
+	display: none;
+}
+
+.hideprogrammers {
+	display: inline;
+}
+
+.hideprogrammers:target + .showprogrammers {
+    display: inline; 
+}
+.hideprogrammers:target {
+    display: none; 
+}
+.hideprogrammers:target ~ #programmer {
+    display:inline; 
+}
+
+.showartists {
+	display: none;
+}
+
+.hideartists {
+	display: inline;
+}
+
+.hideartists:target + .showartists {
+    display: inline; 
+}
+.hideartists:target {
+    display: none; 
+}
+.hideartists:target ~ #artist {
+    display:inline; 
+}
+
+.showsound {
+	display: none;
+}
+
+.hidesound {
+	display: inline;
+}
+
+.hidesound:target + .showsound {
+    display: inline; 
+}
+.hidesound:target {
+    display: none; 
+}
+.hidesound:target ~ #sound {
+    display:inline; 
+}
 
 .TeamMember {
-	height: 200px;
+	display: none;
+	/*height: 200px;*/
 }
 
 .TeamMemberPic {
@@ -15,5 +104,6 @@
 }
 
 #TeamList {
+
 	list-style-type: none;
 }

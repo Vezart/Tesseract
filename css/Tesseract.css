@@ -1,95 +1,147 @@
 .showleaders {
 	display: none;
+	height: auto;
 }
 
 .hideleaders {
 	display: inline;
+	height: auto;
 }
 
 .hideleaders:target + .showleaders {
     display: inline; 
+	height: auto;
 }
+
+.hideleaders:target ~ #breaker {
+	display:none;
+}
+
 .hideleaders:target {
     display: none; 
+	height: auto;
 }
 .hideleaders:target ~ #leader {
     display:inline; 
+	height: auto;
 }
 
 .showdesigners {
 	display: none;
+	height: auto;
 }
 
 .hidedesigners {
 	display: inline;
+	height: auto;
 }
 
 .hidedesigners:target + .showdesigners {
     display: inline; 
+	height: auto;
 }
+
+.hidedesigners:target ~ #breaker {
+	display:none;
+}
+
 .hidedesigners:target {
     display: none; 
+	height: auto;
 }
 .hidedesigners:target ~ #designer {
     display:inline; 
+	height: auto;
 }
 
 .showprogrammers {
 	display: none;
+	height: auto;
 }
 
 .hideprogrammers {
 	display: inline;
+	height: auto;
 }
 
 .hideprogrammers:target + .showprogrammers {
     display: inline; 
+	height: auto;
 }
+
+.hideprogrammers:target ~ #breaker {
+	display:none;
+}
+
 .hideprogrammers:target {
     display: none; 
+	height: auto;
 }
 .hideprogrammers:target ~ #programmer {
     display:inline; 
+	height: auto;
 }
 
 .showartists {
 	display: none;
+	height: auto;
 }
 
 .hideartists {
 	display: inline;
+	height: auto;
 }
 
 .hideartists:target + .showartists {
     display: inline; 
+	height: auto;
 }
+
+.hideartists:target ~ #breaker {
+	display:none;
+}
+
 .hideartists:target {
     display: none; 
+	height: auto;
 }
 .hideartists:target ~ #artist {
     display:inline; 
+	height: auto;
 }
 
 .showsound {
 	display: none;
+	height: auto;
 }
 
 .hidesound {
 	display: inline;
+	height: auto;
 }
 
 .hidesound:target + .showsound {
     display: inline; 
+	height: auto;
 }
+
+.hidesound:target ~ #breaker {
+	display:none;
+}
+
 .hidesound:target {
     display: none; 
+	height: auto;
 }
 .hidesound:target ~ #sound {
-    display:inline; 
+    display: inline; 
+	height: auto;
 }
 
 .TeamMember {
 	display: none;
+
+	height: auto;
 	/*height: 200px;*/
 }
 

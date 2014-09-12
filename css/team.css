@@ -1,0 +1,32 @@
+h2, h2::before, p {
+	transition: .4s;
+}
+
+h2 {
+	cursor: pointer;
+}
+
+h2::before {
+	background: url(blue-arrow.svg);
+	transform: rotate(-90deg);
+}
+
+h2.open::before {
+	transform: none;
+}
+
+h2.open ~ h2 {
+	transform: translateY(24px);
+}
+
+p {
+	opacity: 0;
+	pointer-events: none;
+}
+
+h2.open + p {
+	opacity: 1;
+	pointer-events: auto;
+	transform: translateY(8px);
+}
+
